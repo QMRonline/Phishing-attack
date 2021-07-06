@@ -1,0 +1,52 @@
+What is SET?
+The Social-Engineer Toolkit is an open-source penetration testing framework designed for social engineering. SET has many custom attack vectors that allow you to make a believable attack quickly.
+SET is a product of TrustedSec, LLC — an information security consulting firm located in Cleveland, Ohio.
+
+____________________________________________________________________
+What is Credential Harvesting?
+One of the methods in SET is credential harvester attack. Credential harvester method is used when you don’t want to specifically get a shell but perform phishing attacks to obtain usernames and passwords from the system.
+In this attack vector, a website will be cloned, and when the victim enters the user credentials, the usernames and passwords will be posted back to your machine.
+After that, the victim will be redirected back to the legitimate site.
+
+____________________________________________________________________
+How to install this tool?
+git clone https://github.com/trustedsec/social-engineer-toolkit setoolkit/
+cd setoolkit
+pip3 install -r requirements.txt
+python setup.py
+
+____________________________________________________________________
+What you will need?
+Kali Linux
+A little background on Networking and its terms (Private vs Public IPs esp.) would be good.
+You should be online.
+
+____________________________________________________________________
+How to perfome the attack?
+
+Steps:
+Follow these simple steps in 3 Minutes to execute a phishing attack
+Step1: Create the attack
+-recommended to use kali Linux go-to application> social engineering tools> social engineering tool kit or "sudo setoolkit" to run open via terminal if not using kali Linux
+-from the menu select the option "1" social-Engineering attacks
+-Select option "2" Website attack vectors 
+-Select option "3" Credential Harvester Attack Method
+-Select option "1" Web Templates, use can use your site or clone a site using the other two options
+-choose the IP Address where the site should be hosted
+-Select option "2" For Gmail website
+
+Step2: Planning the attack
+-do a small recon study on the target and share the clicking options that can be used by the target mostly email or SMS
+-in my case am using bitly to generate a shorten link of the ip, but you can use a custom name server and DNS too
+-Sharing the shorten URL to the target
+-Efficient method is to a spear-phishing attacking 
+
+Steps3: Exploit the target
+-once the target opens the link we'll get the IP address and location of the target in terminal
+-phishing attack is activated and the credential is harvested once the target type 
+-the username and password is hacked now you can see that in the terminal or on the locally saved file 
+-Final file will be saved in most cases/root/.set/reports/filename.xml will have the report saved use "cat filename" to open the report 
+
+____________________________________________________________________
+Using this knowledge what else i can do?
+You can clone any website instagram, Facbook, Flipkart, amazon or any banking site and do this attack to harvest the credentials.
